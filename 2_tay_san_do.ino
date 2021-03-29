@@ -8,7 +8,7 @@
 //trái: 45-44-43-42-41-40
 
  void hai_tay_gap_qua_do_san_do(){
-       chay_do_line_do_encoder (cb_truoc_sau, chay_toi, 2000, 1, 255, 255, 30); 
+       chay_do_line_do_encoder (cb_truoc_sau, chay_toi, 2000, 1, 255, 255, 30); //dùng dò line đo encoder: chọn cảm biến trước sau, chạy tới, xung 2000, dừng, tốc độ bánh trái 255, tốc độ bánh phải 255)
        haxuong();          
        kep();
        nanglen();

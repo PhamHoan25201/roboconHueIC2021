@@ -1,11 +1,40 @@
-//****bố trí bánh xe****//
+//****Bố trí bánh xe****//
 //bánh 1 -------- bánh 2
 //bánh 3 -------- bánh 4
-//****bố trí cảm biến****//
+
+//****Bố trí cảm biến (lắp cảm biến được sắp xếp từ trái qua phải theo hướng bo mạch ra ****//
 //trước: 39-38-37-36-35-34
 //sau: 27-26-25-24-23-22
 //phải: 33-32-31-30-29-28
 //trái: 45-44-43-42-41-40
+
+//****Cách nhận biết một số ký tự, màu dây ****//
+//**Ở bo mạch điều khiển, cảm biến và nút điều khiển
+//Gnd là port âm
+//Vcc là port dương
+//S là port tín hiệu
+//**Ở động cơ-dây encoder
+//Gnd là dây xanh lá cây
+//S là dây vàng
+//Vcc là dây xanh dương
+//Motor+ là dây đỏ
+//Motor- là dây đen
+//**Ở sevor
+//Gnd là dây red
+//Vcc là dây brown
+//S là dây Orange
+
+//****Set port càng cho sevor****/
+//**Càng trước
+//Khop_duoi: 48
+//khop_trai: 47
+//khop_phai: 46
+//**Càng trái
+//Khop_duoi_mot: 15
+//khop_trai_mot: 14
+//khop_phai_mot: 16
+
+//Phía dưới đã set các port cho động cơ, encoder, nút chọn sân đấu
 #include <Servo.h>
 #define pwm1_lui    4
 #define pwm1_toi    5
@@ -162,9 +191,4 @@ if (cpx == 1)
    hai_tay_gap_2_qua_do_san_xanh();
  
  }
-
-
-
-     
-
 }
